@@ -118,7 +118,8 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 10px 0;
 }
-.social-icon-footer{
+
+.social-icon-footer {
     margin: 10px;
     width: 20px;
     height: 20px;
@@ -127,14 +128,68 @@
     font-size: 18px;
     border-radius: 50%;
 }
-hr{
-  background-color: gray;
-  height: 1px;
-  border: none;
-  margin: 10px 0;
+
+hr {
+    background-color: gray;
+    height: 1px;
+    border: none;
+    margin: 10px 0;
 }
-.copy-right{
+
+.copy-right {
     text-align: center;
     padding: 15px 0;
     font-size: 18px;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .top-banner-container {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .top-banner-social {
+        font-size: 11px;
+        margin-bottom: 15px;
+
+    }
+    .logo-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .nav-container {
+        width: 175px;
+    }
+    .home-icon {
+      border: none;
+    }
+    .nav-items{
+        border: none;
+    }
+    .project-section{
+        grid-template-columns:1fr;
+        padding-bottom: 15px;
+    }
+    .footer-social {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 992px) {
+    .top-banner-container {
+        flex-direction: column;
+        justify-content: start;
+
+    }
+
+    .top-banner-social {
+
+        margin-bottom: 10px;
+    }
+    
+    .logo-container>h1 {
+        font-size: 45px;
+        padding: 5px 0;
+    }
 }
