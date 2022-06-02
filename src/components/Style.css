@@ -192,4 +192,7 @@ hr {
         font-size: 45px;
         padding: 5px 0;
     }
+    .footer-social {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
